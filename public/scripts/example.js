@@ -1,4 +1,9 @@
 // tutorial1.js
+
+var data = [
+  {author:"test1", text:"fadfa"},
+  {author:"test2d", text:"dfasfasdf"}
+];
 var CommentBox = React.createClass({
   render: function() {
     return (
@@ -23,16 +28,6 @@ var CommentList = React.createClass({
   }
 });
 
-var CommentForm = React.createClass({
-  render: function() {
-    return (
-      <div className="commentForm">
-        Hello, world! I am a CommentForm.
-      </div>
-    );
-  }
-});
-
 var Comment = React.createClass({
   render: function() {
     var rawMarkup = marked(this.props.children.toString(), {sanitize: true});
@@ -47,6 +42,19 @@ var Comment = React.createClass({
     )
   }
 });
+
+
+var CommentForm = React.createClass({
+  render: function() {
+    return (
+      <div className="commentForm">
+        Hello, world! I am a CommentsForm.
+      </div>
+    );
+  }
+});
+
+
 
 
 ReactDOM.render(
