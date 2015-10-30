@@ -1,20 +1,11 @@
 var Counter = React.createClass({
   getInitialState() {
     return {
-      //boolean
-      count: true
+      count: 0
     };
   },
-
   onClick() {
-    if (this.state.count){
-      this.setState({count: false});
-
-      console.log(false);
-    }else {
-      this.setState({count: true});
-      console.log(true);
-    }
+    this.setState({count: this.state.count + 1});
   },
   render() {
     return (
@@ -23,6 +14,7 @@ var Counter = React.createClass({
         <button onClick={this.onClick}>click!</button>
       </div>
     );
+
   }
 });
 
