@@ -1,66 +1,18 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <title>React Tutorial</title>
-    <!-- Not present in the tutorial. Just for basic styling. -->
-    <link rel="stylesheet" href="css/base.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react-dom.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.6.15/browser.js"></script>
+    <meta charset="UTF-8" />
+    <title>Hello React</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.3/react.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.3/react-dom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.2/marked.min.js"></script>
   </head>
   <body>
-    <div id="navi"></div>
-    <div id="navi2"></div>
     <div id="content"></div>
-
-
-    <script type="text/babel" src="scripts/example.js"></script>
-    <script type="text/babel">
-      // To get started with this tutorial running your own code, simply remove
-      // the script tag loading scripts/example.js and start writing code here.
-
-      var Nav = ReactBootstrap.Nav;
-      var NavItem = ReactBootstrap.NavItem;
-      var activeNumber = 1;
-
-      function handleSelect(selectedKey) {
-        //ここに書き換えるプログラム
-        alert('selected ' + selectedKey);
-        activeNumber = selectedKey;
-        console.log(activeNumber);
-        return activeNumber
-
-      }
-
-
-
-      const navInstance = (
-        <Nav bsStyle="tabs" activeKey={1} onSelect={handleSelect}>
-          <NavItem eventKey={1} href="/home">NavItem 1 content</NavItem>
-          <NavItem eventKey={2} title="Item">NavItem 2 content</NavItem>
-          <NavItem eventKey={3} disabled>NavItem 3 content</NavItem>
-        </Nav>
-      );
-
-      ReactDOM.render(navInstance, document.getElementById('navi'));
-
-
-    </script>
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">\
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react-dom.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-bootstrap/0.27.3/react-bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-bootstrap/0.27.3/react-bootstrap.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-bootstrap/0.27.3/react-bootstrap.min.js.map"></script>
-
-
+    <script type="text/babel"></script>
+    <script type="text/babel" src="scripts/tutorial.js"></script>
   </body>
 </html>
